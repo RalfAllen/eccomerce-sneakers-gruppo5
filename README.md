@@ -1,3 +1,3 @@
-# eccomerce-sneakers-gruppo5
+# ecomerce-sneakers-gruppo5
 
 Note del gruppo 5 
