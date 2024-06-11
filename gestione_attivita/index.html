@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applicazione di Gestione delle Attività</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="blue">
+    <div class="container">
+      <h1>Applicazione di Gestione delle Attività</h1>
+      <label for="themeSelect">Seleziona un tema:</label>
+      <select id="themeSelect" onchange="changeTheme()">
+        <option value="light">Tema chiaro</option>
+        <option value="blue">Tema azzurro</option>
+        <option value="orange">Tema arancione</option>
+        <option value="red">Tema rosso</option>
+        <option value="yellow">Tema giallo</option>
+      </select>
+      <button onclick="removeTheme()">Rimuovi Tema</button>
+      <input
+        type="text"
+        id="backgroundInput"
+        placeholder="URL dell'immagine di sfondo"
+      />
+      <button onclick="changeBackground()">Cambia sfondo</button>
+      <button onclick="removeBackground()">Rimuovi</button>
+      <input type="text" id="taskInput" placeholder="Aggiungi nuova attività" />
+      <input type="date" id="dueDateInput" />
+      <select id="categoryInput">
+        <option value="">Seleziona una categoria</option>
+        <option value="lavoro">Lavoro</option>
+        <option value="studio">Studio</option>
+        <option value="personale">Personale</option>
+      </select>
+      <select id="priorityInput">
+        <option value="">Seleziona la priorità</option>
+        <option value="alta">Alta</option>
+        <option value="media">Media</option>
+        <option value="bassa">Bassa</option>
+      </select>
+      <button onclick="addTask()">Aggiungi</button>
+      <label for="sortSelect">Ordina per:</label>
+      <select id="sortSelect" onchange="sortTasks()">
+        <option value="none">Nessuno</option>
+        <option value="date">Data di Scadenza</option>
+        <option value="priority">Priorità</option>
+        <option value="category">Categoria</option>
+      </select>
+      <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

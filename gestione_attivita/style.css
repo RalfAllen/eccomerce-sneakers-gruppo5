@@ -1,0 +1,203 @@
+/* Tema chiaro */
+body.light {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Bianco trasparente con maggiore opacità */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tema azzurro */
+body.blue {
+    background-color: #eaf6ff;
+    color: #333;
+}
+
+/* Tema arancione */
+body.orange {
+    background-color: #ffd8b7; /* Un arancione più chiaro */
+    color: #333;
+}
+
+/* Tema rosso */
+body.red {
+    background-color: #ffc2b3; /* Un rosso più chiaro */
+    color: #333;
+}
+
+/* Tema giallo */
+body.yellow {
+    background-color: #fff2b3; /* Un giallo più chiaro */
+    color: #333;
+}
+
+/* Stile per l'immagine di sfondo */
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Media query per dispositivi mobili */
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+/* Stile per il pulsante elimina */
+.delete-btn {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Stile per il pulsante elimina al passaggio del mouse */
+.delete-btn:hover {
+    background-color: #ff0000;
+}
+
+/* Stile per le notifiche */
+.notification {
+    display: flex;
+    align-items: center;
+    color: #d9534f;
+    background-color: #f9e2e2;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.notification-icon {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+/* Stile per le categorie */
+.category {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Stile per la priorità */
+.priority {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Stile per la priorità alta */
+.priority[data-priority="alta"] {
+    color: red;
+}
+
+/* Stile per la priorità media */
+.priority[data-priority="media"] {
+    color: orange;
+}
+
+/* Stile per la priorità bassa */
+.priority[data-priority="bassa"] {
+    color: green;
+}
+
+
+.theme-notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 9999;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.theme-notification::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent rgba(0, 0, 0, 0.8) transparent;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+.settings {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.delete-btn {
+    float: right;
+    background-color: #dc3545;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background-color: #bd2130;
+}
+
+
